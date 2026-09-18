@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quick Clicker - Database Connectivity Lab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-card">
+        <h2>Quick Clicker Challenge</h2>
+        <div class="input-group">
+            <label>Player Name:</label>
+            <input type="text" id="playerName" placeholder="Enter name">
+        </div>
+        <div class="score-display">
+            Score: <span id="score">0</span>
+        </div>
+        <button id="clickBtn" onclick="clickTarget()">CLICK ME!</button>
+        <button id="saveBtn" onclick="saveData()">Save Score</button>
+
+        <h3>Leaderboard / Saved Records</h3>
+        <table id="recordsTable">
+            <thead>
+                <tr>
+                    <th>Player</th>
+                    <th>Score</th>
+                    <th>Date/Time</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
